@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manual de Usuario - Guarani POS v1.0.0</title>
+    <style>
+      :root { --primary:#ec5b13; --primary-soft:#fff3eb; --text:#172033; --muted:#5f6c82; --border:#dfe6ef; --bg:#f6f3ef; --card:#ffffff; }
+      * { box-sizing:border-box; }
+      body { margin:0; font-family:"Segoe UI", Arial, sans-serif; color:var(--text); background:var(--bg); line-height:1.5; }
+      .page { max-width:980px; margin:0 auto; padding:40px 32px 72px; }
+      .hero,.section,.note,.module-card { background:var(--card); border:1px solid var(--border); border-radius:20px; box-shadow:0 10px 28px rgba(15,23,42,.05); }
+      .hero { padding:36px; margin-bottom:28px; background:linear-gradient(135deg,#fffaf6 0%,#ffffff 100%); }
+      .brand { display:inline-flex; align-items:center; gap:14px; margin-bottom:20px; }
+      .brand-mark { width:52px; height:52px; border-radius:16px; display:grid; place-items:center; background:linear-gradient(135deg,var(--primary) 0%,#ff7a2f 100%); color:white; font-weight:700; font-size:22px; }
+      h1,h2,h3 { margin:0 0 12px; line-height:1.15; }
+      h1 { font-size:2.1rem; } h2 { font-size:1.4rem; margin-bottom:16px; } h3 { font-size:1.05rem; }
+      p { margin:0 0 12px; }
+      .meta { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+      .pill { display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; background:var(--primary-soft); color:var(--primary); font-weight:600; font-size:.92rem; }
+      .toc { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin:24px 0 32px; }
+      .toc a { display:block; padding:14px 16px; border:1px solid var(--border); border-radius:14px; background:var(--card); color:var(--text); text-decoration:none; font-weight:600; }
+      .section { padding:28px; margin-bottom:22px; }
+      .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+      .module-card { padding:18px; }
+      .module-card ul,.section ul,.section ol { margin:0; padding-left:20px; }
+      .module-card li,.section li { margin-bottom:6px; }
+      .note { padding:18px 20px; margin:18px 0; background:#fff9f4; }
+      .note strong { color:var(--primary); }
+      table { width:100%; border-collapse:collapse; margin-top:12px; }
+      th,td { border-bottom:1px solid var(--border); padding:10px 8px; text-align:left; vertical-align:top; }
+      th { font-size:.85rem; color:var(--muted); text-transform:uppercase; }
+      .footer { margin-top:32px; color:var(--muted); font-size:.92rem; text-align:center; }
+      @media print { body { background:white; } .page { max-width:none; padding:0; } .hero,.section,.note,.module-card,.toc a { box-shadow:none; } .section,.hero { break-inside:avoid; } }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <section class="hero">
+        <div class="brand">
+          <div class="brand-mark">GP</div>
+          <div>
+            <div style="font-size:.95rem;color:var(--muted);font-weight:700;">MANUAL DE USUARIO</div>
+            <h1>Guarani POS v1.0.0</h1>
+          </div>
+        </div>
+        <p>Este manual fue preparado para que el usuario final pueda aprender a operar Guarani POS en su versión <strong>1.0.0</strong>, con una descripción clara de las funciones actuales del sistema y de los flujos principales de trabajo.</p>
+        <div class="meta">
+          <span class="pill">POS y caja</span><span class="pill">Presupuestos</span><span class="pill">Pagarés</span><span class="pill">Inventario</span><span class="pill">Compras</span><span class="pill">Reportes</span>
+        </div>
+      </section>
+
+      <div class="toc">
+        <a href="#introduccion">1. Introducción</a><a href="#acceso">2. Acceso al sistema</a>
+        <a href="#dashboard">3. Dashboard</a><a href="#caja">4. Caja</a>
+        <a href="#pos">5. POS</a><a href="#presupuestos">6. Presupuestos</a>
+        <a href="#clientes">7. Clientes</a><a href="#productos">8. Productos</a>
+        <a href="#inventario">9. Inventario</a><a href="#compras">10. Compras</a>
+        <a href="#pagares">11. Pagarés</a><a href="#reportes">12. Reportes</a>
+        <a href="#configuracion">13. Configuración</a><a href="#buenas-practicas">14. Buenas prácticas</a>
+      </div>
+
+      <section class="section" id="introduccion">
+        <h2>1. Introducción</h2>
+        <p>Guarani POS es un sistema de punto de venta pensado para operación diaria de comercios en Paraguay. Permite vender, controlar caja, administrar clientes y productos, registrar compras, llevar inventario, cobrar pagarés y consultar reportes operativos.</p>
+        <div class="note"><strong>Importante:</strong> cada empresa visualiza solo su propia información. Los usuarios, productos, clientes, ventas, compras y reportes quedan separados por empresa.</div>
+      </section>
+
+      <section class="section" id="acceso">
+        <h2>2. Acceso al sistema</h2>
+        <ol>
+          <li>Ingresar a la pantalla de login.</li>
+          <li>Completar empresa, usuario y contraseña.</li>
+          <li>Presionar <strong>Ingresar</strong>.</li>
+          <li>Si el sistema lo permite, también se puede usar acceso por PIN.</li>
+        </ol>
+        <p>Los permisos visibles dependen del rol del usuario: administrador, supervisor o cajero.</p>
+      </section>
+
+      <section class="section" id="dashboard">
+        <h2>3. Dashboard</h2>
+        <p>El dashboard resume la operación actual de la empresa.</p>
+        <div class="grid">
+          <div class="module-card"><h3>Indicadores principales</h3><ul><li>Ventas del día</li><li>Ventas del mes</li><li>Productos con bajo stock</li><li>Presupuestos pendientes</li><li>Pagarés vencidos</li><li>Usuarios activos</li></ul></div>
+          <div class="module-card"><h3>Uso recomendado</h3><ul><li>Revisar rápidamente el estado operativo al comenzar el día</li><li>Controlar alertas de stock bajo</li><li>Detectar pendientes comerciales o financieros</li></ul></div>
+        </div>
+      </section>
+
+      <section class="section" id="caja">
+        <h2>4. Caja</h2>
+        <p>La caja controla la apertura, movimientos y cierre del turno.</p>
+        <table>
+          <thead><tr><th>Función</th><th>Descripción</th></tr></thead>
+          <tbody>
+            <tr><td>Abrir caja</td><td>Permite iniciar el turno con un monto de apertura y observación opcional.</td></tr>
+            <tr><td>Ingresos y retiros</td><td>Permite registrar movimientos manuales durante el día.</td></tr>
+            <tr><td>Cierre de caja</td><td>Compara el efectivo esperado con el contado y calcula diferencias.</td></tr>
+            <tr><td>Historial</td><td>Muestra las cajas abiertas y cerradas, con opción de reporte y PDF.</td></tr>
+          </tbody>
+        </table>
+        <div class="note"><strong>Importante:</strong> si existe diferencia al cerrar la caja, el sistema exige observación.</div>
+      </section>
+
+      <section class="section" id="pos">
+        <h2>5. POS</h2>
+        <p>El módulo principal del sistema permite registrar ventas de forma rápida.</p>
+        <div class="grid">
+          <div class="module-card"><h3>Funciones principales</h3><ul><li>Búsqueda de productos por código o nombre</li><li>Búsqueda y alta rápida de clientes</li><li>Descuento por ítem</li><li>Descuento global</li><li>Venta con múltiples medios de cobro</li><li>Suspender y reanudar venta</li><li>Vista previa, reimpresión y PDF</li></ul></div>
+          <div class="module-card"><h3>Reglas destacadas</h3><ul><li>Se requiere caja abierta para vender</li><li>El precio mayorista se aplica automáticamente por cantidad cuando corresponde</li><li>Los límites de descuento dependen del rol y de parámetros configurados</li><li>Las devoluciones y anulaciones ajustan stock y caja</li></ul></div>
+        </div>
+      </section>
+
+      <section class="section" id="presupuestos">
+        <h2>6. Presupuestos</h2>
+        <ul><li>Permite crear presupuestos con cliente, vigencia y observación.</li><li>Soporta descuento por línea y descuento global.</li><li>Permite aprobación, rechazo y marcado como enviado.</li><li>Incluye vista previa y PDF del presupuesto.</li><li>Puede convertirse a venta cuando corresponda.</li></ul>
+      </section>
+
+      <section class="section" id="clientes">
+        <h2>7. Clientes</h2>
+        <p>Desde esta pantalla se administran los datos del cliente.</p>
+        <ul><li>Nombre, documento, RUC, teléfono, correo y dirección</li><li>Tipo de documento</li><li>Segmento comercial: minorista, mayorista u otros</li><li>Perfil fiscal: contribuyente, consumidor final u otros</li><li>Observación y estado activo/inactivo</li></ul>
+      </section>
+
+      <section class="section" id="productos">
+        <h2>8. Productos</h2>
+        <ul><li>Alta y edición de productos</li><li>Precio costo</li><li>Precio de venta 1</li><li>Precio de venta 2 para mayorista</li><li>Cantidad mínima para activar precio mayorista</li><li>Stock actual y stock mínimo</li><li>Importación masiva desde Excel</li></ul>
+      </section>
+
+      <section class="section" id="inventario">
+        <h2>9. Inventario</h2>
+        <ul><li>Resumen de stock actual</li><li>Filtro de productos con stock bajo</li><li>Ajuste manual de stock con motivo</li><li>Kardex rápido por producto</li><li>Movimientos por venta, devolución, anulación y compra</li><li>Exportación de inventario y kardex</li></ul>
+      </section>
+
+      <section class="section" id="compras">
+        <h2>10. Compras</h2>
+        <div class="grid">
+          <div class="module-card"><h3>Operación</h3><ul><li>Alta de proveedores</li><li>Compra directa</li><li>Orden de compra</li><li>Recepción parcial o total</li><li>Pagos al proveedor</li></ul></div>
+          <div class="module-card"><h3>Controles</h3><ul><li>La compra impacta inventario</li><li>Pago en efectivo genera retiro en caja</li><li>Si no hay caja abierta o no alcanza el efectivo, se bloquea</li><li>Se controla saldo pendiente y estado de pago</li></ul></div>
+        </div>
+      </section>
+
+      <section class="section" id="pagares">
+        <h2>11. Pagarés</h2>
+        <ul><li>Alta de pagarés manuales o vinculados a venta</li><li>Pago parcial o total</li><li>Control de saldo pendiente y vencimiento</li><li>Si el pago es en efectivo, genera ingreso en caja</li><li>Auditoría específica de pagarés</li></ul>
+      </section>
+
+      <section class="section" id="reportes">
+        <h2>12. Reportes</h2>
+        <p>La pantalla de reportes permite consultar el período elegido y exportar resultados.</p>
+        <ul><li>Ventas por día</li><li>Ventas por cajero</li><li>Productos más vendidos</li><li>Caja diaria</li><li>Anulaciones y devoluciones</li><li>Exportación en Excel y PDF</li></ul>
+      </section>
+
+      <section class="section" id="configuracion">
+        <h2>13. Configuración</h2>
+        <table>
+          <thead><tr><th>Pantalla</th><th>Uso</th></tr></thead>
+          <tbody>
+            <tr><td>Configuración de factura legal</td><td>Datos fiscales, timbrado, establecimiento, punto de expedición y correlativo.</td></tr>
+            <tr><td>Paramétricos</td><td>Catálogos del sistema: documentos, perfiles fiscales, segmentos, motivos y políticas.</td></tr>
+            <tr><td>Usuarios</td><td>Alta de cajeros y supervisores, con activación o inactivación.</td></tr>
+            <tr><td>Suscripciones</td><td>Vista comercial del plan actual y capacidades habilitadas.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" id="buenas-practicas">
+        <h2>14. Buenas prácticas de uso</h2>
+        <ol><li>Abrir caja antes de comenzar a vender o cobrar.</li><li>Registrar siempre ingresos y retiros manuales en el momento.</li><li>Revisar stock bajo de forma diaria.</li><li>Usar clientes correctamente identificados cuando se requiere comprobante fiscal.</li><li>Verificar el cierre de caja todos los días.</li><li>Respaldar la base de datos con frecuencia.</li></ol>
+        <div class="note"><strong>Implementaciones futuras:</strong> el sistema deja preparado el camino para integraciones posteriores como Bancard y otras mejoras avanzadas, pero este manual describe únicamente las funciones disponibles en la versión 1.0.0.</div>
+      </section>
+
+      <p class="footer">Guarani POS v1.0.0 · Manual preparado para uso operativo del cliente final.</p>
+    </div>
+  </body>
+</html>

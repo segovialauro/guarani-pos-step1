@@ -1,0 +1,130 @@
+MANUAL DE USUARIO - GUARANI POS v1.0.0
+
+1. INTRODUCCION
+Guarani POS es un sistema de punto de venta orientado a comercios de Paraguay.
+Permite vender, controlar caja, administrar clientes y productos, registrar compras,
+controlar inventario, cobrar pagares y consultar reportes operativos.
+
+2. ACCESO AL SISTEMA
+- Ingresar empresa, usuario y contrasena.
+- El sistema puede permitir acceso por PIN segun configuracion.
+- Los permisos visibles dependen del rol: administrador, supervisor o cajero.
+
+3. DASHBOARD
+Muestra un resumen rapido de la operacion:
+- Ventas del dia
+- Ventas del mes
+- Bajo stock
+- Presupuestos pendientes
+- Pagares vencidos
+- Usuarios activos
+
+4. CAJA
+Funciones principales:
+- Abrir caja con monto inicial.
+- Registrar ingresos manuales.
+- Registrar retiros manuales.
+- Cerrar caja con conteo final.
+- Ver historial de cajas.
+- Ver reporte y PDF de caja.
+Importante: si existe diferencia al cerrar, el sistema exige observacion.
+
+5. POS
+Funciones principales:
+- Buscar productos por codigo o nombre.
+- Buscar clientes y crear cliente rapido.
+- Agregar productos al carrito.
+- Aplicar descuento por item y descuento global.
+- Cobrar con uno o varios medios de pago.
+- Suspender y reanudar venta.
+- Vista previa, reimpresion y PDF.
+- Anular y devolver ventas.
+Reglas importantes:
+- Se requiere caja abierta para vender.
+- El precio mayorista puede aplicarse automaticamente por cantidad.
+- Las anulaciones y devoluciones ajustan stock y caja.
+
+6. PRESUPUESTOS
+- Crear presupuesto con cliente, vigencia y observacion.
+- Agregar productos y descuentos.
+- Aprobar, rechazar o marcar como enviado.
+- Vista previa y PDF del presupuesto.
+- Convertir presupuesto a venta.
+
+7. CLIENTES
+Se administran:
+- Nombre
+- Documento y tipo de documento
+- RUC
+- Telefono y correo
+- Direccion
+- Segmento comercial
+- Perfil fiscal
+- Estado activo o inactivo
+
+8. PRODUCTOS
+Se administran:
+- Codigo y nombre
+- Categoria y descripcion
+- Precio costo
+- Precio de venta 1
+- Precio de venta 2 para mayorista
+- Cantidad minima mayorista
+- Stock actual y stock minimo
+- Importacion masiva desde Excel
+
+9. INVENTARIO
+Funciones:
+- Ver stock actual.
+- Filtrar stock bajo.
+- Ajustar stock manualmente.
+- Ver kardex por producto.
+- Registrar movimientos por venta, compra, devolucion y anulacion.
+- Exportar inventario y kardex.
+
+10. COMPRAS
+Funciones:
+- Alta de proveedores.
+- Compra directa.
+- Orden de compra.
+- Recepcion parcial o total.
+- Pagos al proveedor.
+Controles:
+- La compra sube stock.
+- El pago en efectivo genera retiro en caja.
+- Si no hay caja abierta o no alcanza el efectivo, el pago se bloquea.
+
+11. PAGARES
+Funciones:
+- Crear pagares.
+- Registrar pagos parciales o totales.
+- Controlar saldo y vencimiento.
+- Si el cobro es en efectivo, genera ingreso en caja.
+- Consultar auditoria de pagares.
+
+12. REPORTES
+La pantalla de reportes permite:
+- Ventas por dia.
+- Ventas por cajero.
+- Productos mas vendidos.
+- Caja diaria.
+- Anulaciones y devoluciones.
+- Exportacion en Excel y PDF.
+
+13. CONFIGURACION
+Incluye:
+- Configuracion de factura legal.
+- Parametricos.
+- Usuarios.
+- Suscripciones.
+
+14. BUENAS PRACTICAS
+- Abrir caja antes de vender o cobrar.
+- Registrar ingresos y retiros en el momento.
+- Revisar stock bajo todos los dias.
+- Verificar cierre de caja diariamente.
+- Mantener respaldos de la base de datos.
+
+15. ALCANCE DE LA VERSION 1.0.0
+Este manual describe las funciones disponibles en la version 1.0.0.
+Quedan como futuras implementaciones integraciones como Bancard y mejoras avanzadas.

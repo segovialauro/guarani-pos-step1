@@ -1,0 +1,337 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 3 0 R 5 0 R 7 0 R 9 0 R ] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1663 >>
+stream
+BT
+/F1 11 Tf
+50 790 Td
+14 TL
+(MANUAL DE USUARIO - GUARANI POS v1.0.0) Tj
+T*
+() Tj
+T*
+(1. INTRODUCCION) Tj
+T*
+(Guarani POS es un sistema de punto de venta orientado a comercios de Paraguay.) Tj
+T*
+(Permite vender, controlar caja, administrar clientes y productos, registrar compras,) Tj
+T*
+(controlar inventario, cobrar pagares y consultar reportes operativos.) Tj
+T*
+() Tj
+T*
+(2. ACCESO AL SISTEMA) Tj
+T*
+(- Ingresar empresa, usuario y contrasena.) Tj
+T*
+(- El sistema puede permitir acceso por PIN segun configuracion.) Tj
+T*
+(- Los permisos visibles dependen del rol: administrador, supervisor o cajero.) Tj
+T*
+() Tj
+T*
+(3. DASHBOARD) Tj
+T*
+(Muestra un resumen rapido de la operacion:) Tj
+T*
+(- Ventas del dia) Tj
+T*
+(- Ventas del mes) Tj
+T*
+(- Bajo stock) Tj
+T*
+(- Presupuestos pendientes) Tj
+T*
+(- Pagares vencidos) Tj
+T*
+(- Usuarios activos) Tj
+T*
+() Tj
+T*
+(4. CAJA) Tj
+T*
+(Funciones principales:) Tj
+T*
+(- Abrir caja con monto inicial.) Tj
+T*
+(- Registrar ingresos manuales.) Tj
+T*
+(- Registrar retiros manuales.) Tj
+T*
+(- Cerrar caja con conteo final.) Tj
+T*
+(- Ver historial de cajas.) Tj
+T*
+(- Ver reporte y PDF de caja.) Tj
+T*
+(Importante: si existe diferencia al cerrar, el sistema exige observacion.) Tj
+T*
+() Tj
+T*
+(5. POS) Tj
+T*
+(Funciones principales:) Tj
+T*
+(- Buscar productos por codigo o nombre.) Tj
+T*
+(- Buscar clientes y crear cliente rapido.) Tj
+T*
+(- Agregar productos al carrito.) Tj
+T*
+(- Aplicar descuento por item y descuento global.) Tj
+T*
+(- Cobrar con uno o varios medios de pago.) Tj
+T*
+(- Suspender y reanudar venta.) Tj
+T*
+(- Vista previa, reimpresion y PDF.) Tj
+T*
+(- Anular y devolver ventas.) Tj
+T*
+(Reglas importantes:) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 1380 >>
+stream
+BT
+/F1 11 Tf
+50 790 Td
+14 TL
+(- Se requiere caja abierta para vender.) Tj
+T*
+(- El precio mayorista puede aplicarse automaticamente por cantidad.) Tj
+T*
+(- Las anulaciones y devoluciones ajustan stock y caja.) Tj
+T*
+() Tj
+T*
+(6. PRESUPUESTOS) Tj
+T*
+(- Crear presupuesto con cliente, vigencia y observacion.) Tj
+T*
+(- Agregar productos y descuentos.) Tj
+T*
+(- Aprobar, rechazar o marcar como enviado.) Tj
+T*
+(- Vista previa y PDF del presupuesto.) Tj
+T*
+(- Convertir presupuesto a venta.) Tj
+T*
+() Tj
+T*
+(7. CLIENTES) Tj
+T*
+(Se administran:) Tj
+T*
+(- Nombre) Tj
+T*
+(- Documento y tipo de documento) Tj
+T*
+(- RUC) Tj
+T*
+(- Telefono y correo) Tj
+T*
+(- Direccion) Tj
+T*
+(- Segmento comercial) Tj
+T*
+(- Perfil fiscal) Tj
+T*
+(- Estado activo o inactivo) Tj
+T*
+() Tj
+T*
+(8. PRODUCTOS) Tj
+T*
+(Se administran:) Tj
+T*
+(- Codigo y nombre) Tj
+T*
+(- Categoria y descripcion) Tj
+T*
+(- Precio costo) Tj
+T*
+(- Precio de venta 1) Tj
+T*
+(- Precio de venta 2 para mayorista) Tj
+T*
+(- Cantidad minima mayorista) Tj
+T*
+(- Stock actual y stock minimo) Tj
+T*
+(- Importacion masiva desde Excel) Tj
+T*
+() Tj
+T*
+(9. INVENTARIO) Tj
+T*
+(Funciones:) Tj
+T*
+(- Ver stock actual.) Tj
+T*
+(- Filtrar stock bajo.) Tj
+T*
+(- Ajustar stock manualmente.) Tj
+T*
+(- Ver kardex por producto.) Tj
+T*
+(- Registrar movimientos por venta, compra, devolucion y anulacion.) Tj
+T*
+(- Exportar inventario y kardex.) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 1370 >>
+stream
+BT
+/F1 11 Tf
+50 790 Td
+14 TL
+(10. COMPRAS) Tj
+T*
+(Funciones:) Tj
+T*
+(- Alta de proveedores.) Tj
+T*
+(- Compra directa.) Tj
+T*
+(- Orden de compra.) Tj
+T*
+(- Recepcion parcial o total.) Tj
+T*
+(- Pagos al proveedor.) Tj
+T*
+(Controles:) Tj
+T*
+(- La compra sube stock.) Tj
+T*
+(- El pago en efectivo genera retiro en caja.) Tj
+T*
+(- Si no hay caja abierta o no alcanza el efectivo, el pago se bloquea.) Tj
+T*
+() Tj
+T*
+(11. PAGARES) Tj
+T*
+(Funciones:) Tj
+T*
+(- Crear pagares.) Tj
+T*
+(- Registrar pagos parciales o totales.) Tj
+T*
+(- Controlar saldo y vencimiento.) Tj
+T*
+(- Si el cobro es en efectivo, genera ingreso en caja.) Tj
+T*
+(- Consultar auditoria de pagares.) Tj
+T*
+() Tj
+T*
+(12. REPORTES) Tj
+T*
+(La pantalla de reportes permite:) Tj
+T*
+(- Ventas por dia.) Tj
+T*
+(- Ventas por cajero.) Tj
+T*
+(- Productos mas vendidos.) Tj
+T*
+(- Caja diaria.) Tj
+T*
+(- Anulaciones y devoluciones.) Tj
+T*
+(- Exportacion en Excel y PDF.) Tj
+T*
+() Tj
+T*
+(13. CONFIGURACION) Tj
+T*
+(Incluye:) Tj
+T*
+(- Configuracion de factura legal.) Tj
+T*
+(- Parametricos.) Tj
+T*
+(- Usuarios.) Tj
+T*
+(- Suscripciones.) Tj
+T*
+() Tj
+T*
+(14. BUENAS PRACTICAS) Tj
+T*
+(- Abrir caja antes de vender o cobrar.) Tj
+T*
+(- Registrar ingresos y retiros en el momento.) Tj
+T*
+(- Revisar stock bajo todos los dias.) Tj
+T*
+(- Verificar cierre de caja diariamente.) Tj
+T*
+(- Mantener respaldos de la base de datos.) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 246 >>
+stream
+BT
+/F1 11 Tf
+50 790 Td
+14 TL
+() Tj
+T*
+(15. ALCANCE DE LA VERSION 1.0.0) Tj
+T*
+(Este manual describe las funciones disponibles en la version 1.0.0.) Tj
+T*
+(Quedan como futuras implementaciones integraciones como Bancard y mejoras avanzadas.) Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000135 00000 n 
+0000000262 00000 n 
+0000001977 00000 n 
+0000002104 00000 n 
+0000003536 00000 n 
+0000003663 00000 n 
+0000005085 00000 n 
+0000005213 00000 n 
+0000005511 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+5582
+%%EOF
