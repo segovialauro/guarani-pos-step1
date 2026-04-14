@@ -1,6 +1,23 @@
-﻿# Guarani POS v1.0.0
+# Guarani POS Suite v1.0.0
 
-Sistema POS SaaS orientado a comercios con control de ventas, caja, presupuestos, inventario, compras, pagares y reportes operativos.
+Repositorio principal de la suite Guarani POS. Centraliza documentacion, scripts de instalacion y la referencia funcional del sistema.
+
+## Repositorios relacionados
+
+- Suite / documentacion: [segovialauro/guarani-pos-step1](https://github.com/segovialauro/guarani-pos-step1)
+- Backend: [segovialauro/guaraniPOS](https://github.com/segovialauro/guaraniPOS)
+- Frontend: [segovialauro/guaraniPOSFront](https://github.com/segovialauro/guaraniPOSFront)
+
+## Alcance de este repositorio
+
+Este repositorio agrupa:
+
+- documentacion funcional
+- guia de instalacion
+- scripts Windows para instalacion, arranque y respaldo
+- copia integrada del proyecto para referencia y soporte operativo
+
+La publicacion tecnica del backend y del frontend tambien existe en repos separados.
 
 ## Modulos incluidos
 
@@ -18,7 +35,7 @@ Sistema POS SaaS orientado a comercios con control de ventas, caja, presupuestos
 - Parametricos
 - Usuarios
 
-## Stack actual
+## Stack actual de la suite
 
 - Backend: Spring Boot 3 / Java 17 / PostgreSQL
 - Frontend: Angular 18
@@ -53,14 +70,17 @@ Sistema POS SaaS orientado a comercios con control de ventas, caja, presupuestos
 
 - `docs/manual-usuario-guarani-pos-v1.0.0.pdf`
 - `docs/guia-instalacion-guarani-pos-v1.0.0.md`
+- `docs/release-notes-v1.0.0.md`
 
-## Credenciales y configuracion inicial
+## Credenciales y configuracion inicial para cliente
 
 Revisar:
 
 - `backend/src/main/resources/application.properties`
+- `backend/src/main/resources/application-setup.properties`
+- `backend/src/main/resources/application-prod.properties`
 - `backend/src/main/resources/schema.sql`
-- `backend/src/main/resources/data.sql`
+- `backend/src/main/resources/data-prod.sql`
 
 ## Notas para la release 1.0.0
 
